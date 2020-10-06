@@ -10,7 +10,8 @@ input[type=number] {
 
 #number{
     border-radius: 25px;
-    background-color: #5f5f5fb6;    
+    background-color: #181818; 
+    color: aliceblue;   
 }
 #add_btn{
 
