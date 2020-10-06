@@ -22,3 +22,18 @@ input[type=number] {
 #restart_btn{
 
 }
+body{
+  text-align: center;
+  align-content: center;
+}
+.pad{
+  padding: 18px 18px;
+  border-radius: 4px;
+}
+div{
+  margin: 0;
+  width: fit-content;
+}
+div>input{
+  margin:0;
+}

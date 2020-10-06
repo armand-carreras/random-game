@@ -30,9 +30,9 @@ input.addEventListener("keyup", function(event) {
 function restart(){
     document.getElementById("restart_btn").hidden = true;
     x=0;
-    array = new Array();
+    array = [];
     toggle = false;
-    rand = Math.floor(Math.random() * (10 - 0)) + 0;
+    rand = Math.floor(Math.random() *10) + 1;
     var elems = document.getElementsByClassName("pad");
         for(var i = 0; i < elems.length; i++) {
             elems[i].disabled = false;
