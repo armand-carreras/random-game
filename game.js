@@ -1,19 +1,21 @@
 var x=0;
-var array = Array();
+var array = [];
 var toggle = false;
-var rand = Math.floor(Math.random() * (10 - 0)) + 0;
+var rand = Math.floor(Math.random() *10) + 1;
 
-function array_add(){
+function array_add(num){
     
-    array[x] = document.getElementById("number").value;
-    //alert("Elemento: " + array[x] + "Added at index " + x);
-    if(array[x]==rand){toggle=true;}
+    array[x] = num;
+    if(array[x]===rand){toggle=true;}
     x++;
     //borrar contenido de la casilla
-    document.getElementById("number").value = ""; 
+    document.getElementById("pad_"+num).disabled=true;
     if(x>2){
-        document.getElementById("add_btn").disabled = true;
         document.getElementById("send_btn").disabled = false;
+        var elems = document.getElementsByClassName("pad");
+        for(var i = 0; i < elems.length; i++) {
+            elems[i].disabled = true;
+        }
     }
 }
 
@@ -31,7 +33,10 @@ function restart(){
     array = new Array();
     toggle = false;
     rand = Math.floor(Math.random() * (10 - 0)) + 0;
-    document.getElementById("add_btn").disabled = false;
+    var elems = document.getElementsByClassName("pad");
+        for(var i = 0; i < elems.length; i++) {
+            elems[i].disabled = false;
+        }
     document.getElementById("send_btn").disabled = true;
     document.getElementById("Result").innerHTML = "";
 }

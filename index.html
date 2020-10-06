@@ -14,7 +14,25 @@
     </head>
     <body>
         <h1>Choose your numbers!</h1>
-        <input type="number" id="number" min=0 max=10></input>
+        <div>
+            <input type="button" class="pad" value="1"  id="pad_1" onclick="array_add(1);"></input>
+            <input type="button" class="pad" value="2"  id="pad_2" onclick="array_add(2);"></input>
+            <input type="button" class="pad" value="3"  id="pad_3" onclick="array_add(3);"></input>  
+        </div>
+        <div>
+            <input type="button" class="pad" value="4"  id="pad_4" onclick="array_add(4);"></input>
+            <input type="button" class="pad" value="5"  id="pad_5" onclick="array_add(5);"></input>
+            <input type="button" class="pad" value="6"  id="pad_6" onclick="array_add(6);"></input>  
+        </div>
+        <div>
+            <input type="button" class="pad" value="7"  id="pad_7" onclick="array_add(7);"></input>
+            <input type="button" class="pad" value="8"  id="pad_8" onclick="array_add(8);"></input>
+            <input type="button" class="pad" value="9"  id="pad_9" onclick="array_add(9);"></input>
+        </div>
+        <div><input  type="button" class="pad" value="10" id="pad_10" onclick="array_add(10);"></input></div>
+               
+
+        <input type="number" id="number" min=1 max=10></input>
         <input type="button" id="add_btn" value="Add" onclick="array_add();"></input>
         <input type="button" id="send_btn" value="Send" disabled onclick="reveal();"></input>
         <div id="Result"></div> 
