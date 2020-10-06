@@ -13,8 +13,9 @@
         <script src="game.js" async defer></script>
     </head>
     <body>
-        <h1>Choose your numbers!</h1>
+        
         <div class="container">
+            <h1>Choose your numbers!</h1>
             <div>
                 <input type="button" class="pad" value="1"  id="pad_1" onclick="array_add(1);"></input
                 ><input type="button" class="pad" value="2"  id="pad_2" onclick="array_add(2);"></input
@@ -35,9 +36,11 @@
 
             <!--<input type="number" id="number" min=1 max=10></input>
             <input type="button" id="add_btn" value="Add" onclick="array_add();"></input>-->
-            <input type="button" id="send_btn" value="Send" disabled onclick="reveal();"></input>
-            <div id="Result"></div> 
-            <input type="button" id="restart_btn" value="Restart" hidden onclick="restart();"></input>
+            <div class="footer">
+                <input type="button" id="send_btn" value="Send" disabled onclick="reveal();"></input>
+                <div id="Result"></div> 
+                <input type="button" id="restart_btn" value="Restart" hidden onclick="restart();"></input>
+            </div>
         </div>  
     </body>
 </html>

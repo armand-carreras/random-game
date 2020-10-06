@@ -23,17 +23,27 @@ input[type=number] {
 
 }
 body{
+  display: flex;
   text-align: center;
-  align-content: center;
+  justify-content: center;
 }
 .pad{
   padding: 18px 18px;
   border-radius: 4px;
 }
-div{
-  margin: 0;
+
+div.container{
   width: fit-content;
+  padding-left: 5px;
+  padding-right: 5px;
+  box-shadow: 3px 3px 10px  #181818, -3px -3px 10px  #181818;
+  border-radius: 10px;
+  background: rgb(9,7,0);
+background: linear-gradient(90deg, rgba(9,7,0,0.5606617647058824) 0%, rgba(255,175,0,1) 50%, rgba(0,0,0,0.48503151260504207) 100%);
 }
-div>input{
-  margin:0;
+h1{
+  font-size: 0.9em;
+}
+.footer{
+  margin-top: 10px;
 }
