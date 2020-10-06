@@ -1,0 +1,23 @@
+/*disable direction input field*/
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+#number{
+    border-radius: 25px;
+    background-color: #5f5f5fb6;    
+}
+#add_btn{
+
+}
+#send_btn{
+
+}
+#restart_btn{
+
+}
