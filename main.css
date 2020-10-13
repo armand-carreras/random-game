@@ -38,8 +38,8 @@ div.container{
   padding-right: 5px;
   box-shadow: 3px 3px 10px  #181818, -3px -3px 10px  #181818;
   border-radius: 10px;
-  background: rgb(9,7,0);
-background: linear-gradient(42deg, rgba(201,0,255,0.5606617647058824) 0%, rgba(0,172,255,1) 50%, rgba(255,0,0,0.48503151260504207) 100%);
+  background: rgb(201,0,255);
+  background: linear-gradient(42deg, rgba(201,0,255,0.5606617647058824) 0%, rgba(0,172,255,1) 50%, rgba(255,0,0,0.48503151260504207) 100%);
 
 }
 h1{
